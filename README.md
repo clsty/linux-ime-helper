@@ -24,9 +24,12 @@
 此脚本直接来自 2025-01-06 的 [linux下软件无法输入中文的完美解决方案：对话框+wl-clipboard+xdotool （输入法） - Nolca - 博客园](https://www.cnblogs.com/nolca/p/18654305) ，并略微做了点改动。
 
 不过，这类方案（即调用支持输入法的外部窗口）并不是上文首创的。
-- 已知最早的来源是 2014 年的 [m13253/minecraft-chat-helper](https://github.com/m13253/minecraft-chat-helper)。
-- 2019-06-10，在此基础上修改得到的方案是[Linux下,Steam中文输入的治标方案. - 鲸鱼的池塘](https://anye7up.cn/post/26/)，仓库见 [anye7up/steam-chat-helper](https://github.com/anye7up/steam-chat-helper)。
+- 已知最早的来源是 2014 年的 [m13253/minecraft-chat-helper](https://github.com/m13253/minecraft-chat-helper)，暂无明确许可。
+- 2019-06-10，在此基础上修改得到的方案是[Linux下,Steam中文输入的治标方案. - 鲸鱼的池塘](https://anye7up.cn/post/26/)，仓库见 [anye7up/steam-chat-helper](https://github.com/anye7up/steam-chat-helper)，采用 MIT 许可。
   - 2019-07-21 还有另一篇博文提到了类似方案，见[使用zenity+xclip实现文字复制粘贴 | weearc 的个人博客](https://blog.weearc.top/posts/5960/)。
+
+由于 Nolca 的脚本没有明确的单独许可证，但包含此脚本的博文采用 BY-NC-SA 许可证，故此项目也采用 BY-NC-SA 许可证。
+> 当然，一个开源项目采用这种许可证是很奇怪的，但也只能这样了。
 
 ## 调试技巧
 - 脚本开头有一行 `set -e`，作用是如果某个命令出错（且未被捕获）就停止运行。
