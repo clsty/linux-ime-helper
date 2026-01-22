@@ -3,12 +3,14 @@
 ## 快速上手
 
 ### 环境准备
-- 在 wayland 下，此脚本依赖 [ydotool](https://github.com/ReimuNotMoe/ydotool)，它需要守护进程 ydotoold 才能工作。
-- 官方推荐使用 root 权限运行 ydotoold，可供参考的命令：
+- 安装依赖项：
+  - Wayland：`ydotool wl-clipboard zenity yad`
+  - X11：`xdotool xclip zenity yad`
+- 其中 [ydotool](https://github.com/ReimuNotMoe/ydotool) 需要守护进程 ydotoold 才能工作。官方推荐使用 root 权限运行 ydotoold，可供参考的命令：
   ```bash
   sudo ydotoold -o $(id -u):$(id -g) -p /tmp/.ydotool_socket
   ```
-- 此仓库内提供了 `ydotoold-imehelper.service` 作为 systemd 服务（注意用户与组 ID 被硬编码为 `1000:1000`，若为其他值，请按需编辑），运行 `make install` 即可安装运行此服务，运行 `make uninstall` 以卸载此服务。
+  此仓库内提供了 `ydotoold-imehelper.service` 作为 systemd 服务（注意用户与组 ID 被硬编码为 `1000:1000`，若为其他值，请按需编辑），运行 `make install` 即可安装运行此服务，运行 `make uninstall` 以卸载此服务。
 
 ### 使用方法
 - 将 `ime-helper.sh` 脚本全局绑定到任一快捷键（绑定方法因桌面环境而异）。
