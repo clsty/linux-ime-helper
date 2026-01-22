@@ -8,8 +8,7 @@
   ```bash
   sudo ydotoold -o $(id -u):$(id -g) -p /tmp/.ydotool_socket
   ```
-
-> TODO: 将 ydotoold 做成 systemd 服务，方便快速调用。
+- 此仓库内提供了 `ydotoold-imehelper.service` 作为 systemd 服务（注意用户与组 ID 被硬编码为 `1000:1000`，若为其他值，请按需编辑），运行 `make install` 即可安装运行此服务，运行 `make uninstall` 以卸载此服务。
 
 ### 使用方法
 - 将 `ime-helper.sh` 脚本全局绑定到任一快捷键（绑定方法因桌面环境而异）。

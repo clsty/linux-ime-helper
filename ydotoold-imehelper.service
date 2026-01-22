@@ -1,0 +1,14 @@
+[Unit]
+Description=ydotoold daemon for linux-ime-helper
+After=network.target
+
+[Service]
+Type=simple
+User=root
+ExecStart=/usr/bin/env ydotoold -o 1000:1000 -p /tmp/.ydotool_socket
+Restart=on-failure
+RestartSec=5
+PermissionsStartOnly=true
+
+[Install]
+WantedBy=multi-user.target
