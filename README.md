@@ -19,7 +19,7 @@
 ## 附加说明
 - 如果你是为了在 Steam 客户端使用输入法：
   - 实际上，只要浏览器的输入法正常，那么在 Steam 网页版也可以完成很多客户端的功能，包括[聊天](https://steamcommunity.com/chat/)。网页版的 Steam 聊天还支持粘贴图片（实测 Debian 13 下的 Steam 客户端不支持）。
-  - 最新的 Steam 客户端已经支持输入中文（需要配合软件包比较新的发行版，例如 Arch Linux 是支持的，见[Steam里没法输入中文，中文输入法是fcitx5的pinyin - 技术交流与探讨 / 新手园地 - Arch Linux 中文论坛](https://forum.archlinuxcn.org/t/topic/13162)，而实测 Debian 13 不支持）。
+  - 最新的 Steam 客户端已经支持输入中文，参见 [Steam 使用中文输入法](https://forum.archlinuxcn.org/t/topic/15900/8)。
 
 ## 历史说明
 此脚本直接来自 2025-01-06 的 [linux下软件无法输入中文的完美解决方案：对话框+wl-clipboard+xdotool （输入法） - Nolca - 博客园](https://www.cnblogs.com/nolca/p/18654305) ，并略微做了点改动。
